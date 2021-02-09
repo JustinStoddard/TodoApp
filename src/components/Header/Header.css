@@ -1,0 +1,79 @@
+:root {
+  --primary-font: Nunito, sans-serif;
+  --primary-font-color: #333333;
+  --primary-accent-color: #0079B4;
+}
+
+.header-container {
+  width: 100%;
+  border-bottom: 1px solid #BDBDBD;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  font-family: var(--primary-font);
+  color: var(--primary-font-color);
+  margin: 0px 10px;
+}
+
+.create-todo-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 20px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  margin: 0px 10px;
+}
+
+.create-todo-button-text {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0px 16px 0px 0px;
+  color: var(--primary-font-color);
+}
+
+.create-todo-button-icon-container {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: hidden;
+  background: var(--primary-accent-color);
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.create-todo-button-icon-container:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.shown-button {
+  display: block;
+}
+
+.hidden-button {
+  display: none;
+}
+
+@media screen and (max-width: 567px) {
+  .header-text {
+    margin: 0px;
+  }
+  .create-todo-button-container {
+    margin: 0px;
+  }
+  .shown-button {
+    display: none;
+  }
+  .hidden-button {
+    display: block;
+  }
+}

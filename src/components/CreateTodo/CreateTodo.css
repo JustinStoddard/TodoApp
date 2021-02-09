@@ -1,0 +1,62 @@
+:root {
+  --primary-font: Nunito, sans-serif;
+  --primary-font-color: #333333;
+  --primary-accent-color: #0079B4;
+  --error: #E23A00;
+}
+
+.create-todo-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.create-todo-input {
+  max-width: 500px;
+  width: calc(100% - 20px);
+  border: hidden;
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.create-todo-input::placeholder {
+  font-size: 15px;
+  font-family: var(--primary-font);
+}
+.top-input {
+  margin-bottom: 20px;
+}
+
+.create-todo-submit-button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: hidden;
+  background: var(--primary-accent-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.create-todo-submit-button:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.error-message {
+  font-family: var(--primary-font);
+  color: var(--error);
+  font-size: 12px;
+}
