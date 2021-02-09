@@ -12,4 +12,5 @@ test("Test if a user can create a todo", () => {
   render(<App />);
   const createTodoButton = screen.findByTestId("create-todo-button");
   console.log("Hey", createTodoButton);
+  // createTodoButton.
 });
