@@ -3,9 +3,10 @@ import "./CreateTodoModal.css";
 import CreateTodo from "../CreateTodo/CreateTodo";
 
 interface Todo {
-  title: String,
-  text: String,
-  complete: Boolean
+  id: number,
+  title: string,
+  text: string,
+  complete: boolean
 };
 
 type Todos = Todo;
