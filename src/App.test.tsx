@@ -4,19 +4,6 @@ import * as ReactDOM from "react-dom";
 import { addTodo, completeTodo, deleteTodo, searchTodo } from "./helpers/todoHelpers";
 import App from "./components/App/App";
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
-
-// test("Test if a user can create a todo", () => {
-//   render(<App />);
-//   const createTodoButton = screen.findByTestId("create-todo-button");
-//   console.log("Hey", createTodoButton);
-//   // createTodoButton.
-// });
-
 describe("Add A Todo", () => {
   let container: HTMLDivElement;
 
