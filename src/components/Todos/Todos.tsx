@@ -75,7 +75,7 @@ const Todos: React.FC<Props> = ({ todoState, setTodosState, setCreateTodoModal }
             const todoIsComplete = todo.complete;
 
             return (
-              <div key={`${todoTitle}-${i}`} className="todo-container" data-test={`${todoTitle}-${i}`}>
+              <div key={todoId} className="todo-container" data-test={`${todoTitle}-${i}`}>
                 <div className="todo-title-container">
                   <h1 className={`todo-title ${todoIsComplete && "todo-complete"}`} data-test={`${todoTitle}-${i}-title`}>{todoTitle}</h1>
                 </div>
